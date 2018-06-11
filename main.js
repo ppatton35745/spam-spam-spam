@@ -252,5 +252,10 @@ const emails = customers.map(customer => {
     return customer["contacts"]["email"];
 })
 
+const emails2 = emails.reduce((cur, next) => {
+    return cur = cur.concat(next);
+})
+
 console.log(customers);
 console.log(emails);
+console.log(emails2);
